@@ -107,10 +107,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE      &trans  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                               &kp N7        &kp N8        &kp N9        &kp PERIOD  &kp EQUAL
-&kp TAB         &trans  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS   &kp SLASH
-&kp LEFT_SHIFT  &trans  &kp EXCLAMATION  &kp LS(NUMBER_2)      &kp HASH               &kp EQUAL                    &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS    &kp ASTERISK
-&trans          &trans  &trans           &trans                &trans                 &trans                       &kp DELETE      &kp N0                                                &kp EQUAL
+&kp ESCAPE      &trans  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)                                                     &kp N7        &kp N8        &kp N9        &kp PERIOD         &kp LS(MINUS)
+&kp TAB         &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &kp SLASH
+&kp LEFT_SHIFT  &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp EQUAL                    &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMICOLON)  &kp RS(COLON)
+&trans          &trans  &trans            &trans            &trans            &trans                       &kp DELETE      &kp N0                                                       &kp LS(MINUS)
             >;
         };
 
