@@ -108,7 +108,7 @@
         NUM {
             bindings = <
 &kp ESCAPE      &kp RIGHT_BRACE  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)                                    &kp N7        &kp N8        &kp N9        &kp PERIOD         &kp LS(MINUS)
-&kp TAB         &kp BACKSLASH    &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans      &kp JP_YEN      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &kp SLASH
+&kp TAB         &kp BACKSLASH    &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans      &kp 0x89        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &kp SLASH
 &kp LEFT_SHIFT  &trans           &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans      &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMICOLON)  &kp DOUBLE_QUOTES
 &trans          &trans           &trans            &trans            &trans            &trans      &kp DELETE      &kp N0                                                       &kp LS(0x87)
             >;
