@@ -124,7 +124,7 @@
         ARROW {
             bindings = <
 &kp F1  &kp F2                &kp F3     &kp F4         &kp F5                                    &kp LC(Z)       &kp UP_ARROW    &kp LC(Y)        &trans              &trans
-&kp F6  &kp F7                &kp F8     &kp F9         &kp F10    &kp LC(LS(TAB))      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(MINUS)       &kp LC(LS(EQUAL))
+&kp F6  &kp F7                &kp F8     &kp F9         &kp F10    &kp LC(LS(TAB))      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(MINUS)       &kp COLON
 &trans  &kp NON_US_BACKSLASH  &kp CARET  &kp SEMICOLON  &kp COLON  &kp LC(TAB)          &kp END   &kp LA(LEFT)    &trans          &kp LA(RIGHT)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
 &trans  &trans                &trans     &trans         &trans     &trans               &trans    &trans                                                               &kp LG(LS(S))
             >;
