@@ -66,8 +66,15 @@
         pass1: pass1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(Y) &kp A &kp M &kp A &kp N &kp Y &kp N0 &kp N4 &kp N6 &kp N9>;
             label = "PASS1";
+        };
+
+        pass2: pass2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp R &kp E &kp D &kp N0 &kp N0 &kp N0 &kp N1>;
+            label = "PASS2";
         };
     };
 
@@ -101,7 +108,7 @@
 &trans     &trans     &kp LG(E)  &trans     &trans                          &kp LC(Y)  &trans  &trans  &trans  &kp F5
 &kp LC(A)  &kp LC(S)  &trans     &trans     &trans     &trans      &kp F13  &kp F6     &kp F7  &kp F8  &kp F9  &kp F10
 &kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &trans   &trans     &trans  &trans  &trans  &kp F11
-&trans     &trans     &trans     &trans     &trans     &trans      &trans   &trans                             &kp F12
+&pass1     &pass2     &trans     &trans     &trans     &trans      &trans   &trans                             &kp F12
             >;
         };
 
