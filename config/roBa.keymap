@@ -25,6 +25,9 @@
     // };
 };
 
+#define JP_YEN 0x89             //¥
+#define JP_UNDERSCORE LS(0x89)  //_
+
 / {
     combos { compatible = "zmk,combos"; };
 
@@ -95,9 +98,9 @@
         NUM {
             bindings = <
 &kp ESCAPE      &kp RIGHT_BRACKET  &kp LS(N7)        &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT    &kp UNDER
-&kp TAB         &kp BACKSLASH      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH
+&kp TAB         &kp BACKSLASH      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans      &kp JP_YEN     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH
 &kp LEFT_SHIFT  &kp LEFT_BRACKET   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans      &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON  &kp DOUBLE_QUOTES
-&trans          &trans             &trans            &trans            &trans            &trans      &kp BACKSPACE  &kp NUMBER_0                                         &kp LS(UNDERSCORE)
+&trans          &trans             &trans            &trans            &trans            &trans      &kp BACKSPACE  &kp NUMBER_0                                         &kp JP_UNDERSCORE
             >;
         };
 
