@@ -26,7 +26,7 @@
 };
 
 #define JP_YEN 0x89             //¥
-#define JP_UNDERSCORE LS(0x89)  //_
+#define JP_UNDERSCORE LS(0x87)  //_
 
 / {
     combos { compatible = "zmk,combos"; };
