@@ -26,34 +26,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -61,6 +34,27 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        pass1: pass1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Y) &kp A &kp M &kp A &kp N &kp Y &kp N0 &kp N4 &kp N6 &kp N9>;
+            label = "PASS1";
+        };
+
+        pass2: pass2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp R &kp E &kp D &kp N0 &kp N0 &kp N0 &kp N1>;
+            label = "PASS2";
+        };
+
+        adrs: adrs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp MINUS &kp Y &kp A &kp M &kp A &kp N &kp E &kp AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "ADRS";
         };
     };
 
@@ -91,25 +85,25 @@
 
         SC {
             bindings = <
-&trans     &trans  &trans     &trans     &trans                         &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &trans  &kp LC(C)  &kp LC(V)  &kp LC(V)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans     &trans     &trans     &trans      &trans  &trans                          &trans
+&trans     &trans     &kp LG(E)  &trans     &trans                         &trans  &trans  &trans  &trans  &trans
+&kp LC(A)  &kp LC(S)  &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)  &kp LC(V)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&pass1     &pass2     &adrs      &trans     &trans     &trans      &trans  &trans                          &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp ESCAPE      &kp RIGHT_BRACKET  &kp LS(N7)        &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT            &kp UNDER
-&kp TAB         &kp BACKSLASH      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS          &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_BRACKET   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans      &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES
-&trans          &trans             &trans            &trans            &trans            &trans      &kp BACKSPACE  &kp NUMBER_0                                                 &kp LS(MINUS)
+&kp ESCAPE      &kp RIGHT_BRACKET  &kp LS(N7)        &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT    &kp UNDER
+&kp TAB         &kp BACKSLASH      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_BRACKET   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans      &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON  &kp DOUBLE_QUOTES
+&trans          &trans             &trans            &trans            &trans            &trans      &kp BACKSPACE  &kp NUMBER_0                                         &kp LS(MINUS)
             >;
         };
 
         ARROW {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                         &trans        &kp UP_ARROW  &trans           &trans              &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                         &kp LC(Z)     &kp UP_ARROW  &kp LC(Y)        &kp HOME            &kp END
 &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp HOME  &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp LC(MINUS)       &kp LC(COLON)
 &trans  &trans  &trans  &trans  &trans   &trans      &kp END   &kp LA(LEFT)  &trans        &kp LA(RIGHT)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
 &trans  &trans  &trans  &trans  &trans   &trans      &trans    &trans                                                           &kp LG(LS(S))
