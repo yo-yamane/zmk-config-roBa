@@ -88,10 +88,10 @@
 
         SC {
             bindings = <
-&trans     &trans     &kp LG(E)  &kp LC(MINUS)  &kp LC(COLON)                      &trans  &trans  &trans  &trans  &trans
-&kp LC(A)  &kp LC(S)  &trans     &trans         &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)      &kp LC(V)      &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&pass1     &pass2     &adrs      &trans         &trans         &trans      &trans  &trans                          &trans
+&trans     &trans     &kp LG(E)  &trans     &trans                         &trans  &trans  &trans  &trans  &trans
+&kp LC(A)  &kp LC(S)  &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&pass1     &pass2     &adrs      &trans     &trans     &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -107,7 +107,7 @@
         ARROW {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                         &kp LC(Z)     &kp UP_ARROW  &kp LC(Y)        &kp HOME            &kp END
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp HOME  &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp LC(MINUS)       &kp LC(COLON)
+&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp HOME  &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp MINUS           &kp COLON
 &trans  &trans  &trans  &trans  &trans   &trans      &kp END   &kp LA(LEFT)  &trans        &kp LA(RIGHT)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
 &trans  &trans  &trans  &trans  &trans   &trans      &trans    &trans                                                           &kp LG(LS(S))
             >;
