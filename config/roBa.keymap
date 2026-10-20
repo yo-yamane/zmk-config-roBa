@@ -88,10 +88,10 @@
 
         SC {
             bindings = <
-&trans     &trans     &kp LG(E)  &trans     &trans                         &trans  &trans  &trans  &trans  &trans
-&kp LC(A)  &kp LC(S)  &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)  &kp LC(V)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&pass1     &pass2     &adrs      &trans     &trans     &trans      &trans  &trans                          &trans
+&trans     &trans     &kp LG(E)  &kp LC(MINUS)  &kp LC(COLON)                      &trans  &trans  &trans  &trans  &trans
+&kp LC(A)  &kp LC(S)  &trans     &trans         &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &trans     &kp LC(C)  &kp LC(V)      &kp LC(V)      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&pass1     &pass2     &adrs      &trans         &trans         &trans      &trans  &trans                          &trans
             >;
         };
 
